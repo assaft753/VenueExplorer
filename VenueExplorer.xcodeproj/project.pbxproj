@@ -13,6 +13,10 @@
 		70DDD585206E492F000962B7 /* VenueExplorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD583206E492F000962B7 /* VenueExplorer.xcdatamodeld */; };
 		70DDD587206E492F000962B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DDD586206E492F000962B7 /* Assets.xcassets */; };
 		70DDD58A206E492F000962B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DDD588206E492F000962B7 /* LaunchScreen.storyboard */; };
+		70DDD593206E4A49000962B7 /* NetworkProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD592206E4A49000962B7 /* NetworkProcessing.swift */; };
+		70DDD595206E7603000962B7 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD594206E7603000962B7 /* Coordinate.swift */; };
+		70DDD597206E77BC000962B7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD596206E77BC000962B7 /* Location.swift */; };
+		70DDD599206E7B5F000962B7 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD598206E7B5F000962B7 /* Venue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		70DDD586206E492F000962B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70DDD589206E492F000962B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70DDD58B206E492F000962B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70DDD592206E4A49000962B7 /* NetworkProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessing.swift; sourceTree = "<group>"; };
+		70DDD594206E7603000962B7 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
+		70DDD596206E77BC000962B7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		70DDD598206E7B5F000962B7 /* Venue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70506845206E9C8200140197 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				70DDD588206E492F000962B7 /* LaunchScreen.storyboard */,
+				70DDD58B206E492F000962B7 /* Info.plist */,
+				70DDD583206E492F000962B7 /* VenueExplorer.xcdatamodeld */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		70DDD570206E492F000962B7 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +74,25 @@
 		70DDD57B206E492F000962B7 /* VenueExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				70DDD591206E4A14000962B7 /* Model */,
 				70DDD57C206E492F000962B7 /* AppDelegate.swift */,
 				70DDD57E206E492F000962B7 /* ViewController.swift */,
 				70DDD580206E492F000962B7 /* Main.storyboard */,
 				70DDD586206E492F000962B7 /* Assets.xcassets */,
-				70DDD588206E492F000962B7 /* LaunchScreen.storyboard */,
-				70DDD58B206E492F000962B7 /* Info.plist */,
-				70DDD583206E492F000962B7 /* VenueExplorer.xcdatamodeld */,
+				70506845206E9C8200140197 /* Utilities */,
 			);
 			path = VenueExplorer;
+			sourceTree = "<group>";
+		};
+		70DDD591206E4A14000962B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				70DDD592206E4A49000962B7 /* NetworkProcessing.swift */,
+				70DDD594206E7603000962B7 /* Coordinate.swift */,
+				70DDD596206E77BC000962B7 /* Location.swift */,
+				70DDD598206E7B5F000962B7 /* Venue.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +168,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				70DDD57F206E492F000962B7 /* ViewController.swift in Sources */,
+				70DDD593206E4A49000962B7 /* NetworkProcessing.swift in Sources */,
 				70DDD585206E492F000962B7 /* VenueExplorer.xcdatamodeld in Sources */,
+				70DDD599206E7B5F000962B7 /* Venue.swift in Sources */,
 				70DDD57D206E492F000962B7 /* AppDelegate.swift in Sources */,
+				70DDD597206E77BC000962B7 /* Location.swift in Sources */,
+				70DDD595206E7603000962B7 /* Coordinate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
