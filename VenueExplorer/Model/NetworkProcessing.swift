@@ -45,7 +45,9 @@ class NetworkProcessing
                         let json=try JSONSerialization.jsonObject(with: data!, options: []) as? [String:Any]
                         completion(json,httpRespond,nil)
                     }
-                    catch let err {completion(nil,httpRespond,err)}
+                    catch let err {
+                        completion(nil,httpRespond,err)
+                    }
                 default:
                     print("\(httpRespond.statusCode)")
                 }

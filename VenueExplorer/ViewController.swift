@@ -15,14 +15,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let baseURL="https://api.foursquare.com/v2/"
-        let path="venues/search?ll=\(lat),\(lan)&client_id=4THX0X2VG2QU0VXWEZTUUA5HDRLD1MYDRXQZU5KAPT5CTVJF&client_secret=RZVE20W4ZRQKLO3NQSUDJFZEV1LVJGZI0U4PDW2LXZBUGZU4&v=20180330"
-        let url="\(baseURL)\(path)"
-        let urlRequest=URLRequest(url: URL(string: url)!)
-        let networkProcessing:NetworkProcessing=NetworkProcessing(request: urlRequest)
-        networkProcessing.DownloadJSON { (dicJSON,httpRespond,error) in
-            print(((dicJSON?["response"] as? [String:Any])?["venues"]) as? NSArray)
+        if let url = URL(string:"https://api.foursquare.com/v2/users/self?oauth_token=C1D2Y34EYNHLND3NDGC0P1ITCBAI20OARGG55XABJE2EQVMB&v=20180601")
+        {
+            let urlRequest = URLRequest(url: url)
+            let networkPro = NetworkProcessing(request: urlRequest)
+            networkPro.DownloadJSON { (jsonData, response, error) in
+                if let data = jsonData
+                {
+                    print(data)
+                    let name = ((data["response"] as! [String:Any])["user"] as! [String:Any])["firstName"] as! String
+                    print(name)
+                }
+                else
+                {
+                    print(error)
+                }
+            }
         }
     }
     

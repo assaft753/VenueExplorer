@@ -61,8 +61,5 @@ struct Venue {
         {
             self.categoryIconURL=nil
         }
-        
-        
-        
     }
 }

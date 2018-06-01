@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7042F1B92072BD6E003EAC54 /* VenueOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042F1B82072BD6E003EAC54 /* VenueOptions.swift */; };
 		70DDD57D206E492F000962B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD57C206E492F000962B7 /* AppDelegate.swift */; };
 		70DDD57F206E492F000962B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD57E206E492F000962B7 /* ViewController.swift */; };
 		70DDD582206E492F000962B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DDD580206E492F000962B7 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7042F1B82072BD6E003EAC54 /* VenueOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueOptions.swift; sourceTree = "<group>"; };
 		70DDD579206E492F000962B7 /* VenueExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenueExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DDD57C206E492F000962B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70DDD57E206E492F000962B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				70DDD588206E492F000962B7 /* LaunchScreen.storyboard */,
-				70DDD58B206E492F000962B7 /* Info.plist */,
 				70DDD583206E492F000962B7 /* VenueExplorer.xcdatamodeld */,
 			);
 			path = Utilities;
@@ -74,6 +75,7 @@
 		70DDD57B206E492F000962B7 /* VenueExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				70DDD58B206E492F000962B7 /* Info.plist */,
 				70DDD591206E4A14000962B7 /* Model */,
 				70DDD57C206E492F000962B7 /* AppDelegate.swift */,
 				70DDD57E206E492F000962B7 /* ViewController.swift */,
@@ -91,6 +93,7 @@
 				70DDD594206E7603000962B7 /* Coordinate.swift */,
 				70DDD596206E77BC000962B7 /* Location.swift */,
 				70DDD598206E7B5F000962B7 /* Venue.swift */,
+				7042F1B82072BD6E003EAC54 /* VenueOptions.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				70DDD593206E4A49000962B7 /* NetworkProcessing.swift in Sources */,
 				70DDD585206E492F000962B7 /* VenueExplorer.xcdatamodeld in Sources */,
 				70DDD599206E7B5F000962B7 /* Venue.swift in Sources */,
+				7042F1B92072BD6E003EAC54 /* VenueOptions.swift in Sources */,
 				70DDD57D206E492F000962B7 /* AppDelegate.swift in Sources */,
 				70DDD597206E77BC000962B7 /* Location.swift in Sources */,
 				70DDD595206E7603000962B7 /* Coordinate.swift in Sources */,
