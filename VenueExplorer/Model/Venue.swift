@@ -13,7 +13,6 @@ struct Venue {
     let name:String
     let location:Location?
     let categoryName:String
-    let checkIns:Int
     let categoryIconURL:URL?
     var categoryIconSize=88
     let url:URL?
@@ -24,15 +23,12 @@ struct Venue {
             let name=json["name"] as? String,
             let categories=json["categories"] as? [[String:Any]],
             let category=categories.first,
-            let categoryName=category["name"] as? String,
-            let stats=json["stats"] as? [String:Any],
-            let checkIns=stats["checkinsCount"] as? Int
+            let categoryName=category["name"] as? String
             else{return nil}
         
         self.id=id
         self.name=name
         self.categoryName=categoryName
-        self.checkIns=checkIns
         if let url=json["url"] as? String
         {
             self.url=URL(string: url)

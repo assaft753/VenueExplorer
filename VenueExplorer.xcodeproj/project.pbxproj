@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7042F1B92072BD6E003EAC54 /* VenueOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042F1B82072BD6E003EAC54 /* VenueOptions.swift */; };
+		7042F1B92072BD6E003EAC54 /* FourSquareEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7042F1B82072BD6E003EAC54 /* FourSquareEndPoint.swift */; };
+		7048B7F320C1995F0045D1E1 /* FourSquareClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B7F220C1995F0045D1E1 /* FourSquareClient.swift */; };
+		7048B7F520C19A060045D1E1 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B7F420C19A060045D1E1 /* ApiResult.swift */; };
+		7048B7F820C2BF5A0045D1E1 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7048B7F720C2BF5A0045D1E1 /* VenuesTableViewController.swift */; };
 		70DDD57D206E492F000962B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD57C206E492F000962B7 /* AppDelegate.swift */; };
-		70DDD57F206E492F000962B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD57E206E492F000962B7 /* ViewController.swift */; };
 		70DDD582206E492F000962B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70DDD580206E492F000962B7 /* Main.storyboard */; };
 		70DDD585206E492F000962B7 /* VenueExplorer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70DDD583206E492F000962B7 /* VenueExplorer.xcdatamodeld */; };
 		70DDD587206E492F000962B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70DDD586206E492F000962B7 /* Assets.xcassets */; };
@@ -21,10 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7042F1B82072BD6E003EAC54 /* VenueOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenueOptions.swift; sourceTree = "<group>"; };
+		7042F1B82072BD6E003EAC54 /* FourSquareEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareEndPoint.swift; sourceTree = "<group>"; };
+		7048B7F220C1995F0045D1E1 /* FourSquareClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareClient.swift; sourceTree = "<group>"; };
+		7048B7F420C19A060045D1E1 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		7048B7F720C2BF5A0045D1E1 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 		70DDD579206E492F000962B7 /* VenueExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenueExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70DDD57C206E492F000962B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70DDD57E206E492F000962B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70DDD581206E492F000962B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70DDD584206E492F000962B7 /* VenueExplorer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VenueExplorer.xcdatamodel; sourceTree = "<group>"; };
 		70DDD586206E492F000962B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,9 +51,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7048B7F620C2BDE00045D1E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7048B7F720C2BF5A0045D1E1 /* VenuesTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		70506845206E9C8200140197 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				70DDD586206E492F000962B7 /* Assets.xcassets */,
 				70DDD588206E492F000962B7 /* LaunchScreen.storyboard */,
 				70DDD583206E492F000962B7 /* VenueExplorer.xcdatamodeld */,
 			);
@@ -76,11 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				70DDD58B206E492F000962B7 /* Info.plist */,
+				7048B7F620C2BDE00045D1E1 /* Controllers */,
 				70DDD591206E4A14000962B7 /* Model */,
 				70DDD57C206E492F000962B7 /* AppDelegate.swift */,
-				70DDD57E206E492F000962B7 /* ViewController.swift */,
 				70DDD580206E492F000962B7 /* Main.storyboard */,
-				70DDD586206E492F000962B7 /* Assets.xcassets */,
 				70506845206E9C8200140197 /* Utilities */,
 			);
 			path = VenueExplorer;
@@ -93,7 +105,9 @@
 				70DDD594206E7603000962B7 /* Coordinate.swift */,
 				70DDD596206E77BC000962B7 /* Location.swift */,
 				70DDD598206E7B5F000962B7 /* Venue.swift */,
-				7042F1B82072BD6E003EAC54 /* VenueOptions.swift */,
+				7042F1B82072BD6E003EAC54 /* FourSquareEndPoint.swift */,
+				7048B7F220C1995F0045D1E1 /* FourSquareClient.swift */,
+				7048B7F420C19A060045D1E1 /* ApiResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,14 +184,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70DDD57F206E492F000962B7 /* ViewController.swift in Sources */,
+				7048B7F320C1995F0045D1E1 /* FourSquareClient.swift in Sources */,
 				70DDD593206E4A49000962B7 /* NetworkProcessing.swift in Sources */,
 				70DDD585206E492F000962B7 /* VenueExplorer.xcdatamodeld in Sources */,
 				70DDD599206E7B5F000962B7 /* Venue.swift in Sources */,
-				7042F1B92072BD6E003EAC54 /* VenueOptions.swift in Sources */,
+				7042F1B92072BD6E003EAC54 /* FourSquareEndPoint.swift in Sources */,
 				70DDD57D206E492F000962B7 /* AppDelegate.swift in Sources */,
+				7048B7F520C19A060045D1E1 /* ApiResult.swift in Sources */,
 				70DDD597206E77BC000962B7 /* Location.swift in Sources */,
 				70DDD595206E7603000962B7 /* Coordinate.swift in Sources */,
+				7048B7F820C2BF5A0045D1E1 /* VenuesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
